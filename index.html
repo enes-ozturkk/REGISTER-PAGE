@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGİSTER FORM</title>
+    <link rel="stylesheet" href="register.css" />
+  </head>
+  <body>
+    <h1>REGİSTER FORM</h1>
+    <form action="">
+      <div>
+        <label for="firstname">FİRST NAME:</label>
+        <input class="inputs"
+          type="text"
+          id="firstname"
+          name="firstname"
+          placeholder="Lütfen Adınızı Giriniz"
+          required
+        />
+      </div>
+      <div>
+        <label for="lastname">LAST NAME:</label>
+        <input class="inputs"
+          type="text"
+          id="lastname"
+          name="lastname"
+          placeholder="Lütfen Soyad Giriniz"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">EMAİL:</label>
+        <input class="inputs"
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Lütfen Email Giriniz"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">PASSWORD:</label>
+        <input class="inputs"
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Lütfen Şifre Giriniz"
+          required
+        />
+      </div>
+      <div>
+        <label for="birth">DAY OF BİRTH:</label>
+        <input class="inputs"
+          type="date"
+          id="birth"
+          name="birth"
+          placeholder="Lütfen DoğumGünü Giriniz"
+          required
+        />
+      </div>
+      <div>
+        <label for="tel">PHONE:</label>
+        <input class="inputs"
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Lütfen TelNum Giriniz:"
+          required
+        />
+      </div>
+      <div>
+        <label for="adres">ADRESS:</label>
+        <textarea  class="adres" class="inputs" name="adres" id="adres" cols="20" rows="5"></textarea>
+      </div>
+      <div>
+        <label for="country">COUNTRY:</label>
+        <select name="country" id="country">
+          <option value="turkey">Lütfen Ülke Seçin</option>
+          <option value="türkiye">TÜRKİYE</option>
+          <option value="almanya">ALMANYA</option>
+          <option value="brezilya">BREZİLYA</option>
+          <option value="hollanda">HOLLANDA</option>
+          <option value="meksika">MEKSİKA</option>
+          <option value="cezayir">CEZAYİR</option>
+        </select>
+      </div>
+      <div>
+        <label for="gender">GENDER:</label>
+        <input type="radio" id="male" name="gender" />
+        <label for="male">MALE</label>
+        <input type="radio" id="female" name="gender" />
+        <label for="female">FEMALE</label>
+      </div>
+      <div class="butons">
+        <input class="buton" type="submit" value="SAVE" />
+        <input class="buton" type="reset" value="CLEAR" />
+      </div>
+    </form>
+  </body>
+</html>
